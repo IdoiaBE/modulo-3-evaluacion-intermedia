@@ -4,10 +4,12 @@ function Country({countryData}) {
     const {name, flag, capital, continents} = countryData;
   return (
     <article className="main_countries_card">
-        <img src={flag} alt="" />
-        <h3>{name.official}</h3>
-        <p>{capital}</p>
-        <small>{continents}</small>
+        <i>{flag}</i>
+        <h3 className="card_title">{name.official}</h3>
+        <div className="card_info">
+            <p>{capital}</p>
+            <small>{continents}</small>
+        </div>
     </article>
   )
 }

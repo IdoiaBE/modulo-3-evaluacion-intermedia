@@ -3,12 +3,14 @@ import '../styles/App.scss';
 import dataJson from '../services/data.json'
 import Header from './Header';
 import ListCountries from './ListCountries';
+import Filters from './Filters';
 
 function App() {
   return (
     <>
     <Header/>
     <main className="main">
+      <Filters/>
       <ListCountries list = {dataJson}/>
     </main>
     </>

@@ -9,7 +9,7 @@ import { useState } from 'react';
 function App() {
 
   //creo la variable de estado para el listado de paises porque luego voy a querer añadir más
-  const [listCountries, setListCountries] = useState()
+  const [listCountries, setListCountries] = useState(dataJson)
 
   //creo la variable de estado para el valor del input text
   const [byCountryValue, setByCountryValue] = useState("")
@@ -42,3 +42,5 @@ export default App;
 // Cuando tenemos INPUTS, PETICIÓN AL SERVIDOR o DATOS QUE CAMBIAN Y HAY QUE VOLVER A PINTARLOS SIEMPRE VARIABLES DE ESTADO
 
 //Siempre que haya un filtro, crearlo  donde están los datos principales y en caso que corresponda se lo mandamos al componente que pinta la lista
+
+//el valor inicial del select de continentes tiene que ser All

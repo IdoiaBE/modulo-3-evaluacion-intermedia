@@ -8,8 +8,8 @@ function App() {
   return (
     <>
     <Header/>
-    <main className='main'>
-      <ListCountries/>
+    <main className="main">
+      <ListCountries list = {dataJson}/>
     </main>
     </>
   );

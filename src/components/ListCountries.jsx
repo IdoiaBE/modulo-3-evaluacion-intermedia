@@ -1,8 +1,10 @@
 import '../styles/ListCountries.scss'
 
-function ListCountries() {
+function ListCountries({list}) {
+    console.log(list)
+    // const listHtml = list.map(item => < )
   return (
-    <section className='main_list'>
+    <section className="main_countries">
         
     </section>
   )

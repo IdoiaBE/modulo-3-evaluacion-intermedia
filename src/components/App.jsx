@@ -16,6 +16,7 @@ function App() {
     setByCountryValue(value.toLowerCase())
   }
 
+  //filtro la lista con el nuevo valor y la envío al componente que la pinta
   const filterByCountry = dataJson.filter(country => country.name.official.toLowerCase().includes(byCountryValue))
 
   return (
@@ -23,7 +24,7 @@ function App() {
     <Header/>
     <main className="main">
       <Filters changeByCountryValue = {changeByCountryValue}/>
-      <ListCountries list = {dataJson}/>
+      <ListCountries list = {filterByCountry}/>
     </main>
     </>
   );

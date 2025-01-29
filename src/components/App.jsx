@@ -8,6 +8,9 @@ import { useState } from 'react';
 
 function App() {
 
+  //creo la variable de estado para el listado de paises porque luego voy a querer añadir más
+  const [listCountries, setListCountries] = useState()
+
   //creo la variable de estado para el valor del input text
   const [byCountryValue, setByCountryValue] = useState("")
 

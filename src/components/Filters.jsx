@@ -1,6 +1,6 @@
 import '../styles/Filters.scss'
 
-function Filters({changeByCountryValue}) {
+function Filters({changeByCountry}) {
 
     const handleInput = (ev) =>{
         changeByCountry(ev.target.value)

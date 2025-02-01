@@ -12,9 +12,21 @@
 .card_info{
     line-height: 5px;
     
+    &_capitals{
+        list-style: none;
+        margin-left: -40px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
 
     &_continents{
         list-style: none;
         margin-left: -40px;
+        font-size: 14px;
+        color: gray;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 }

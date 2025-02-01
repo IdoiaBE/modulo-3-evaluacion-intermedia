@@ -15,18 +15,18 @@ function App() {
   const [byCountryValue, setByCountryValue] = useState("")
 
   //esta función es la que voy a enviar por props para que se ejecute en el componente filters cuando cambie el input text
-  const changeByCountryValue = (value) =>{
+  const changeByCountry = (value) =>{
     setByCountryValue(value.toLowerCase())
   }
 
   //filtro la lista con el nuevo valor y la envío al componente que la pinta
-  const filterByCountry = dataJson.filter(country => country.name.official.toLowerCase().includes(byCountryValue))
+  const filterByCountry = dataJson.filter(country => country.name.common.toLowerCase().includes(byCountryValue))
 
   return (
     <>
     <Header/>
     <main className="main">
-      <Filters changeByCountryValue = {changeByCountryValue}/>
+      <Filters changeByCountry = {changeByCountry}/>
       <ListCountries list = {filterByCountry}/>
     </main>
     </>

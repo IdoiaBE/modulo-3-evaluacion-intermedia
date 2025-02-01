@@ -3,18 +3,18 @@ import '../styles/Filters.scss'
 function Filters({changeByCountryValue}) {
 
     const handleInput = (ev) =>{
-        changeByCountryValue(ev.target.value)
+        changeByCountry(ev.target.value)
     }
   return (
     <section className="main_filters">
-        <h3>Filters</h3>
-        <form>
-            <div className="main_filters_country">
+        <h3 className="filters_title">Filters</h3>
+        <form className="filters_form">
+            <div className="filters_form_country">
                 <label htmlFor="">By Country</label>
                 <input type="text" onChange={handleInput}/>
             </div>
             
-            <div className="main_filters_continent">
+            <div className="filters_form_continent">
                 <label htmlFor="">By Continent</label>
                 <select name="" id="">
                     <option value=""></option>

@@ -5,7 +5,7 @@ function Country({countryData}) {
   return (
     <article className="main_countries_card">
         <i className="card_flag">{flag}</i>
-        <h3 className="card_title">{name.official}</h3>
+        <h3 className="card_title">{name.common}</h3>
         <div className="card_info">
             <p className="card_info_capital">{capital}</p>
             {/* capital también es un array */}
